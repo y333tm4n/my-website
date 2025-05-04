@@ -12,13 +12,14 @@ export default function ContactPage() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitMessage, setSubmitMessage] = useState("");
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData({
             ...formData,
             [name]: value,
         });
     };
+    
 
     const handleSubmit = async (e) => {
         e.preventDefault();
