@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Navigation from "../components/navigation";
-import { FaEnvelope, FaLinkedin, FaGithub, FaPhone } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({
@@ -121,14 +121,7 @@ export default function ContactPage() {
                         </h2>
                         <div className="flex justify-center space-x-6">
                             <a
-                                href="mailto:your.email@example.com"
-                                className="text-teal-600 hover:text-teal-800 transition duration-200 flex items-center space-x-2"
-                            >
-                                <FaEnvelope />
-                                <span>Email</span>
-                            </a>
-                            <a
-                                href="https://linkedin.com/in/yourusername"
+                                href="https://linkedin.com/in/realpjcabigao"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-teal-600 hover:text-teal-800 transition duration-200 flex items-center space-x-2"
@@ -137,20 +130,13 @@ export default function ContactPage() {
                                 <span>LinkedIn</span>
                             </a>
                             <a
-                                href="https://github.com/yourusername"
+                                href="https://github.com/y333tm4n"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-teal-600 hover:text-teal-800 transition duration-200 flex items-center space-x-2"
                             >
                                 <FaGithub />
                                 <span>GitHub</span>
-                            </a>
-                            <a
-                                href="tel:+1234567890"
-                                className="text-teal-600 hover:text-teal-800 transition duration-200 flex items-center space-x-2"
-                            >
-                                <FaPhone />
-                                <span>Phone</span>
                             </a>
                         </div>
                     </div>

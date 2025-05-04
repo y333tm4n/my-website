@@ -92,7 +92,7 @@ export default function ProjectsPage() {
                                         title: "Portfolio Website",
                                         desc: "This very website you're browsing right now!",
                                         tech: ["Next.js", "Tailwind CSS"],
-                                        link: "https://github.com/yourusername/portfolio",
+                                        link: "https://github.com/y333tm4n/my-website",
                                     },
                                 ].map((project, index) => (
                                     <div
