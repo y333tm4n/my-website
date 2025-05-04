@@ -20,8 +20,8 @@ export default function ContactPage() {
         });
     };
     
-
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+// comment here
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
     
