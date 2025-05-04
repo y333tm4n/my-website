@@ -12,30 +12,30 @@ export default function ContactPage() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitMessage, setSubmitMessage] = useState("");
 
-    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-    };
+    // const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    //     const { name, value } = e.target;
+    //     setFormData({
+    //         ...formData,
+    //         [name]: value,
+    //     });
+    // };
     
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        setIsSubmitting(true);
+    // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    //     e.preventDefault();
+    //     setIsSubmitting(true);
     
-        // Simulate form submission
-        setTimeout(() => {
-            setIsSubmitting(false);
-            setSubmitMessage("Thank you for your message! I'll get back to you soon.");
-            setFormData({
-                name: "",
-                email: "",
-                message: "",
-            });
-        }, 1500);
-    };
+    //     // Simulate form submission
+    //     setTimeout(() => {
+    //         setIsSubmitting(false);
+    //         setSubmitMessage("Thank you for your message! I'll get back to you soon.");
+    //         setFormData({
+    //             name: "",
+    //             email: "",
+    //             message: "",
+    //         });
+    //     }, 1500);
+    // };
 
     return (
         <>
