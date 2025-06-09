@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FaHome, FaUser, FaBriefcase, FaEnvelope, FaFolderOpen } from "react-icons/fa";
 
 export default function Navigation() {
     return (
@@ -18,40 +19,45 @@ export default function Navigation() {
                     <li>
                         <Link
                             href="/"
-                            className="hover:underline hover:text-teal-200 transition-colors"
+                            className="flex items-center gap-2 hover:underline hover:text-teal-200 transition-colors"
                         >
+                            <FaHome size={20} />
                             Home
                         </Link>
                     </li>
                     <li>
                         <Link
                             href="/about"
-                            className="hover:underline hover:text-teal-200 transition-colors"
+                            className="flex items-center gap-2 hover:underline hover:text-teal-200 transition-colors"
                         >
+                            <FaUser size={20} />
                             About Me
                         </Link>
                     </li>
                     <li>
                         <Link
                             href="/experience"
-                            className="hover:underline hover:text-teal-200 transition-colors"
+                            className="flex items-center gap-2 hover:underline hover:text-teal-200 transition-colors"
                         >
+                            <FaBriefcase size={20} />
                             Experiences
                         </Link>
                     </li>
                     <li>
                         <Link
                             href="/contact"
-                            className="hover:underline hover:text-teal-200 transition-colors"
+                            className="flex items-center gap-2 hover:underline hover:text-teal-200 transition-colors"
                         >
+                            <FaEnvelope size={20} />
                             Contact
                         </Link>
                     </li>
                     <li>
                         <Link
                             href="/projects"
-                            className="hover:underline hover:text-teal-200 transition-colors"
+                            className="flex items-center gap-2 hover:underline hover:text-teal-200 transition-colors"
                         >
+                            <FaFolderOpen size={20} />
                             Projects
                         </Link>
                     </li>
