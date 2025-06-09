@@ -46,7 +46,7 @@ export default function Home() {
               <span className="border-r-2 border-teal-800 animate-pulse ml-1"></span>
             </h1>
             <p className="text-xl text-gray-500 mb-8 max-w-xl">
-              Exploring new ideas and pushing boundaries in tech, AI, and cloud.
+              Exploring new ideas and pushing boundaries in Tech, AI, and cloud.
             </p>
             <Link href="/about">
               <button className="px-10 py-4 bg-gradient-to-r from-teal-500 to-cyan-700 text-white text-xl font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-xl">
@@ -95,11 +95,11 @@ export default function Home() {
 
         {/* Featured Project Redesigned */}
         <section className="w-full max-w-5xl mt-10 mb-16 flex flex-col md:flex-row items-center gap-10 bg-white rounded-2xl shadow-xl p-10">
-          <div className="flex-1 text-center md:text-left">
+          <div className="flex-1 flex flex-col items-center justify-center text-center">
             <h2 className="text-4xl font-bold mb-4 text-teal-800">Featured Project</h2>
-            <h3 className="text-2xl font-semibold text-teal-700 mb-2">AI Food Tracker</h3>
-            <p className="mb-6 text-gray-500 text-lg">
-              A smart app that tracks food freshness and expiration using ML & sensors.
+            <h3 className="text-2xl font-semibold text-teal-700 mb-2">ReFresh</h3>
+            <p className="mb-6 text-gray-600 text-lg leading-relaxed">
+              <span className="font-semibold text-teal-700">ReFresh</span> is an innovative IoT and computer vision-powered system that detects food spoilage and recommends Filipino dishes, all enhanced by large language models. <br />
             </p>
             <Link href="/projects">
               <button className="px-6 py-3 bg-gradient-to-r from-teal-500 to-cyan-600 text-white rounded-full hover:scale-110 transition-transform duration-300">
@@ -108,7 +108,9 @@ export default function Home() {
             </Link>
           </div>
           <div className="flex-1 flex items-center justify-center">
-            <Image src="/images/logo.png" alt="AI Food Tracker" width={180} height={180} className="rounded-xl shadow-lg bg-teal-50 p-4" />
+            <div className="flex items-center justify-center w-40 h-40 rounded-full shadow-xl border-4 border-teal-200 bg-white">
+              <Image src="/images/refresh-logo.png" alt="AI Food Tracker" width={120} height={120} className="rounded-full object-contain bg-transparent" />
+            </div>
           </div>
         </section>
 
