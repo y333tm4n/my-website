@@ -1,4 +1,5 @@
 import Navigation from "../components/navigation";
+import { FaBriefcase, FaGraduationCap, FaAward, FaCertificate, FaUsers } from "react-icons/fa";
 
 export default function ExperiencePage() {
   return (
@@ -7,17 +8,16 @@ export default function ExperiencePage() {
       <div className="flex flex-col items-center justify-center min-h-screen p-8 sm:p-20 bg-gradient-to-b from-teal-50 to-blue-100 text-gray-800">
         <div className="w-full max-w-4xl">
           <h1 className="text-4xl font-extrabold mb-12 text-center text-teal-700">
-            Experience and Achievements
+            Experience & Achievements
           </h1>
 
-          <div className="space-y-20">
+          <div className="space-y-16">
             {/* Work Experience */}
             <section>
-              <h2 className="text-3xl font-bold mb-10 text-teal-600 text-center">
-                Work Experience
+              <h2 className="flex items-center justify-center gap-2 text-3xl font-bold mb-8 text-teal-600">
+                <FaBriefcase className="text-teal-500" /> Work Experience
               </h2>
-
-              <div className="space-y-10">
+              <div className="space-y-8">
                 <div className="border-l-4 border-teal-600 pl-6 hover:shadow-2xl transition-shadow duration-300 bg-white p-8 rounded-lg">
                   <h3 className="text-2xl font-semibold text-gray-800">
                     Data Analyst Intern
@@ -56,11 +56,10 @@ export default function ExperiencePage() {
 
             {/* Education */}
             <section>
-              <h2 className="text-3xl font-bold mb-10 text-teal-600 text-center">
-                Education
+              <h2 className="flex items-center justify-center gap-2 text-3xl font-bold mb-8 text-teal-600">
+                <FaGraduationCap className="text-blue-500" /> Education
               </h2>
-
-              <div className="space-y-10">
+              <div className="space-y-8">
                 <div className="border-l-4 border-teal-600 pl-6 hover:shadow-2xl transition-shadow duration-300 bg-white p-8 rounded-lg">
                   <h3 className="text-2xl font-semibold text-gray-800">
                     Bachelor of Science in Computer Engineering
@@ -90,10 +89,10 @@ export default function ExperiencePage() {
 
             {/* Achievements */}
             <section>
-              <h2 className="text-3xl font-bold mb-10 text-teal-600 text-center">
-                Achievements
+              <h2 className="flex items-center justify-center gap-2 text-3xl font-bold mb-8 text-teal-600">
+                <FaAward className="text-yellow-500" /> Achievements
               </h2>
-              <div className="space-y-10">
+              <div className="space-y-8">
                 <div className="border-l-4 border-teal-600 pl-6 hover:shadow-2xl transition-shadow duration-300 bg-white p-8 rounded-lg">
                   <h3 className="text-xl font-semibold text-gray-800 hover:text-teal-600 transition-colors duration-300">
                     Fullstack Developer | Best Generative AI Implementation, AWS Innovations Cup 2024
@@ -115,10 +114,10 @@ export default function ExperiencePage() {
 
             {/* Badges and Certifications */}
             <section>
-              <h2 className="text-3xl font-bold mb-10 text-teal-600 text-center">
-                Badges and Certifications
+              <h2 className="flex items-center justify-center gap-2 text-3xl font-bold mb-8 text-teal-600">
+                <FaCertificate className="text-purple-500" /> Badges & Certifications
               </h2>
-              <div className="space-y-10">
+              <div className="space-y-8">
                 <div className="border-l-4 border-teal-600 pl-6 hover:shadow-2xl transition-shadow duration-300 bg-white p-8 rounded-lg">
                   <h3 className="text-2xl font-semibold text-gray-800">
                     Generative AI with Large Language Models
@@ -148,10 +147,10 @@ export default function ExperiencePage() {
 
             {/* Memberships and Affiliations */}
             <section>
-              <h2 className="text-3xl font-bold mb-10 text-teal-600 text-center">
-                Memberships and Affiliations
+              <h2 className="flex items-center justify-center gap-2 text-3xl font-bold mb-8 text-teal-600">
+                <FaUsers className="text-pink-500" /> Memberships & Affiliations
               </h2>
-              <div className="space-y-10">
+              <div className="space-y-8">
                 <div className="border-l-4 border-teal-600 pl-6 hover:shadow-2xl transition-shadow duration-300 bg-white p-8 rounded-lg">
                   <h3 className="text-2xl font-semibold text-gray-800">
                     Cohort 1 Scholar

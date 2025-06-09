@@ -7,12 +7,14 @@ import Navigation from "./components/navigation";
 import { FaProjectDiagram, FaBriefcase, FaEnvelope } from "react-icons/fa";
 
 export default function Home() {
-  const fullText = "Welcome to My Experimental Website";
+  const names = ["Welcome!", "I'm y33tm4n", "I'm Piolo"];
+  const [nameIndex, setNameIndex] = useState(0);
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [speed, setSpeed] = useState(150);
 
   useEffect(() => {
+    const fullText = names[nameIndex];
     const handleTyping = () => {
       setText((currentText) => {
         if (isDeleting) {
@@ -23,16 +25,16 @@ export default function Home() {
       });
 
       if (!isDeleting && text === fullText) {
-        setTimeout(() => setIsDeleting(true), 1000); 
+        setTimeout(() => setIsDeleting(true), 1000);
       } else if (isDeleting && text === "") {
         setIsDeleting(false);
+        setNameIndex((prev) => (prev + 1) % names.length);
       }
     };
 
     const timer = setTimeout(handleTyping, speed);
-
     return () => clearTimeout(timer);
-  }, [text, isDeleting]);
+  }, [text, isDeleting, nameIndex]);
 
   return (
     <>

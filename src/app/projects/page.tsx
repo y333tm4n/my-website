@@ -1,5 +1,6 @@
 import Navigation from "../components/navigation";
 import Link from "next/link";
+import { FaProjectDiagram, FaCode, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function ProjectsPage() {
     return (
@@ -7,29 +8,27 @@ export default function ProjectsPage() {
             <Navigation />
             <div className="flex flex-col items-center justify-center min-h-screen p-8 sm:p-20 bg-gradient-to-b from-teal-100 via-blue-50 to-blue-200 text-gray-800">
                 <div className="w-full max-w-5xl">
-                    <h1 className="text-6xl font-extrabold mb-10 text-center text-teal-700 drop-shadow-lg animate-fade-in">
-                        My Projects
+                    <h1 className="text-6xl font-extrabold mb-8 text-center text-teal-700 drop-shadow-lg animate-fade-in">
+                        <span className="flex items-center justify-center gap-4"><FaProjectDiagram className="text-teal-500" size={48}/> My Projects</span>
                     </h1>
 
-                    <p className="text-xl text-center mb-14 text-gray-600 animate-fade-in">
-                        A collection of my work, experiments, and ongoing projects.
+                    <p className="text-xl text-center mb-14 text-gray-600 animate-fade-in max-w-2xl mx-auto">
+                        A collection of my work, experiments, and ongoing projects. Each project reflects my passion for building, learning, and experimenting with new technologies.
                     </p>
 
                     <div className="space-y-16">
                         {/* Featured Project */}
                         <div className="bg-white rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                            <div className="relative h-64 w-full bg-gray-200">
-                                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-teal-700 to-teal-500 text-white text-lg font-semibold">
-                                    AI Food Tracker Application
+                            <div className="relative h-64 w-full bg-gradient-to-r from-teal-700 to-teal-500 flex items-center justify-center">
+                                <div className="w-40 h-40 rounded-full bg-white flex items-center justify-center shadow-lg">
+                                    <img src="/images/refresh-logo.png" alt="ReFresh Logo" className="w-32 h-32 object-contain" />
                                 </div>
                             </div>
                             <div className="p-8">
-                                <h2 className="text-3xl font-bold text-teal-700 mb-4">AI Food Tracker</h2>
+                                <h2 className="text-3xl font-bold text-teal-700 mb-4 flex items-center gap-2"><FaCode className="text-teal-400"/> AI Food Tracker</h2>
                                 <p className="text-gray-600 mb-6">
-                                    A smart application that uses machine learning to track food freshness and notify users before items expire. 
-                                    The system integrates with smart refrigerators and uses computer vision to identify foods.
+                                    An IoT and Computer Vision-Enabled System for Food Spoilage Detection and Filipino Cuisine Recommendation Using Large Language Models
                                 </p>
-
                                 <div className="flex flex-wrap gap-3 mb-6">
                                     {["Python", "TensorFlow", "React Native", "IoT"].map((tech, index) => (
                                         <span
@@ -40,23 +39,22 @@ export default function ProjectsPage() {
                                         </span>
                                     ))}
                                 </div>
-
                                 <div className="flex gap-4">
                                     <a
                                         href="https://github.com/yourusername/ai-food-tracker"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="px-5 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors shadow-md"
+                                        className="px-5 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors shadow-md flex items-center gap-2"
                                     >
-                                        View Code
+                                        <FaExternalLinkAlt /> View Code
                                     </a>
                                     <a
                                         href="https://ai-food-tracker-demo.vercel.app"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="px-5 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-500 transition-colors shadow-md"
+                                        className="px-5 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-500 transition-colors shadow-md flex items-center gap-2"
                                     >
-                                        Live Demo
+                                        <FaExternalLinkAlt /> Live Demo
                                     </a>
                                 </div>
                             </div>
@@ -64,10 +62,9 @@ export default function ProjectsPage() {
 
                         {/* Smaller Projects Section */}
                         <section className="mt-20">
-                            <h2 className="text-4xl font-bold mb-10 text-center text-teal-800 animate-fade-in">
-                                Smaller Projects
+                            <h2 className="text-4xl font-bold mb-10 text-center text-teal-800 animate-fade-in flex items-center justify-center gap-3">
+                                <FaCode className="text-teal-400"/> Smaller Projects
                             </h2>
-
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 {[
                                     {
@@ -97,12 +94,12 @@ export default function ProjectsPage() {
                                 ].map((project, index) => (
                                     <div
                                         key={index}
-                                        className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                                        className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full"
                                     >
-                                        <h3 className="text-2xl font-semibold mb-3 text-teal-700">
-                                            {project.title}
+                                        <h3 className="text-2xl font-semibold mb-3 text-teal-700 flex items-center gap-2">
+                                            <FaCode className="text-teal-400"/>{project.title}
                                         </h3>
-                                        <p className="text-gray-600 mb-4">{project.desc}</p>
+                                        <p className="text-gray-600 mb-4 flex-1">{project.desc}</p>
                                         <div className="flex flex-wrap gap-2 mb-4">
                                             {project.tech.map((tech, i) => (
                                                 <span
@@ -117,9 +114,9 @@ export default function ProjectsPage() {
                                             href={project.link}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-teal-600 hover:text-teal-800 font-medium"
+                                            className="text-teal-600 hover:text-teal-800 font-medium flex items-center gap-1"
                                         >
-                                            View Project →
+                                            View Project <FaExternalLinkAlt className="inline-block"/>
                                         </a>
                                     </div>
                                 ))}
