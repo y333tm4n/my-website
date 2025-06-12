@@ -41,16 +41,15 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         <>
             <Navigation />
             <div className="flex flex-col items-center justify-center min-h-screen p-8 sm:p-20 bg-gradient-to-br from-teal-50 to-purple-100 text-gray-800">
-              <div className="w-full max-w-2xl bg-white shadow-2xl rounded-3xl p-8 sm:p-14">
-                {/* Header Section */}
-                <div className="flex flex-col items-center mb-10">
-                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-teal-400 to-purple-500 flex items-center justify-center mb-5 shadow-lg">
-                    <FaEnvelope className="text-white" size={48} />
+              <div className="w-full max-w-2xl bg-white shadow-xl rounded-2xl p-4 sm:p-8 md:p-14 mx-auto">
+                <div className="flex flex-col items-center mb-8">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-teal-400 to-purple-400 flex items-center justify-center mb-4">
+                    <FaEnvelope className="text-white" size={32} />
                   </div>
-                  <h1 className="text-4xl font-extrabold text-center text-teal-700 mb-2 tracking-tight">
-                    Get in Touch
+                  <h1 className="text-2xl sm:text-4xl font-extrabold text-center text-teal-600 mb-2">
+                    Contact Me
                   </h1>
-                  <p className="text-lg text-gray-500 text-center max-w-md">
+                  <p className="text-base sm:text-lg text-gray-500 text-center max-w-md">
                     Have a question, want to collaborate, or just want to say hi? Fill out the form below or connect with me on social media.
                   </p>
                 </div>

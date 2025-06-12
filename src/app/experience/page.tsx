@@ -7,19 +7,18 @@ export default function ExperiencePage() {
       <Navigation />
       <div className="flex flex-col items-center justify-center min-h-screen p-8 sm:p-20 bg-gradient-to-b from-teal-50 to-blue-100 text-gray-800">
         <div className="w-full max-w-4xl">
-          <h1 className="text-4xl font-extrabold mb-12 text-center text-teal-700">
-            Experience & Achievements
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-8 text-center text-teal-700">
+            Experience and Achievements
           </h1>
-
-          <div className="space-y-16">
+          <div className="space-y-8 sm:space-y-10 md:space-y-16">
             {/* Work Experience */}
             <section>
-              <h2 className="flex items-center justify-center gap-2 text-3xl font-bold mb-8 text-teal-600">
-                <FaBriefcase className="text-teal-500" /> Work Experience
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-10 text-teal-600 text-center">
+                Work Experience
               </h2>
-              <div className="space-y-8">
-                <div className="border-l-4 border-teal-600 pl-6 hover:shadow-2xl transition-shadow duration-300 bg-white p-8 rounded-lg">
-                  <h3 className="text-2xl font-semibold text-gray-800">
+              <div className="space-y-6 sm:space-y-10">
+                <div className="border-l-4 border-teal-600 pl-6 hover:shadow-2xl transition-shadow duration-300 bg-white p-6 sm:p-8 rounded-lg">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-800">
                     Data Analyst Intern
                   </h3>
                   <p className="text-gray-600 mt-2">
@@ -38,8 +37,8 @@ export default function ExperiencePage() {
                   </ul>
                 </div>
 
-                <div className="border-l-4 border-teal-600 pl-6 hover:shadow-2xl transition-shadow duration-300 bg-white p-8 rounded-lg">
-                  <h3 className="text-2xl font-semibold text-gray-800">
+                <div className="border-l-4 border-teal-600 pl-6 hover:shadow-2xl transition-shadow duration-300 bg-white p-6 sm:p-8 rounded-lg">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-800">
                     Senior Data Volunteer
                   </h3>
                   <p className="text-gray-600 mt-2">
