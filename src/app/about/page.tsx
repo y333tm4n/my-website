@@ -29,7 +29,7 @@ export default function AboutPage() {
                   Passionate about building innovative solutions at the
                   intersection of{" "}
                   <span className="font-semibold text-teal-500">AI</span>,{" "}
-                  <span className="font-semibold text-teal-500">cloud</span>, and{" "}
+                  <span className="font-semibold text-teal-500">Cloud</span>, and{" "}
                   <span className="font-semibold text-teal-500">IoT</span>. I love
                   collaborating, learning, and sharing knowledge to make a positive
                   impact.
@@ -46,8 +46,9 @@ export default function AboutPage() {
                 Hello! I'm{" "}
                 <span className="font-bold text-teal-600">Piolo</span>. Over the
                 past 3 years, I've immersed myself in{" "}
-                <span className="font-semibold text-teal-500">data</span>,{" "}
-                <span className="font-semibold text-teal-500">machine learning</span>
+                <span className="font-semibold text-teal-500">Data</span>,{" "}
+                <span className="font-semibold text-teal-500">Cloud</span>,{" "}
+                <span className="font-semibold text-teal-500">Machine Learning</span>
                 , <span className="font-semibold text-teal-500">AI</span>, and{" "}
                 <span className="font-semibold text-teal-500">IoT</span>, working on
                 projects that solve real-world problems and drive positive change.
